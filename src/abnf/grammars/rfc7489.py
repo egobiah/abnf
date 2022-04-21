@@ -44,5 +44,5 @@ class Rule(_Rule):
             'dmarc-rfmt = "rf"  *WSP "=" *WSP "afrf"',
             # Originaly 'dmarc-percent = "pct" *WSP "=" *WSP 1*3DIGIT'. 'pct=999' is following the grammar but it is wrong
             'dmarc-percent = "pct" *WSP "=" *WSP ( "100" / 1*2DIGIT / "0" )',
-            'dmarc-record = dmarc-version dmarc-sep dmarc-request *(dmarc-sep (dmarc-srequest / dmarc-auri / dmarc-furi / dmarc-aspf / dmarc-adkim / dmarc-aspf / dmarc-ainterval / dmarc-fo / dmarc-percent / dmarc-rfmt)) dmarc-sep'
+            'dmarc-record = dmarc-version dmarc-sep dmarc-request *(dmarc-sep (dmarc-srequest / dmarc-auri / dmarc-furi / dmarc-aspf / dmarc-adkim / dmarc-aspf / dmarc-ainterval / dmarc-fo / dmarc-percent / dmarc-rfmt)) [ dmarc-sep ]'
         ]

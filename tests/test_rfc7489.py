@@ -138,7 +138,8 @@ def test_valid_dmarc_pct(src):
 
 @pytest.mark.parametrize("src", [
     'v=DMARC1;p=reject;',
-    'v=DMARC1;p=reject;sp=quarantine;rua=mailto:olivier@hureau.com;ruf=mailto:olivier@hureau.com;adkim=s;aspf=s;ri=2400;fo=1:d:s;rf=afrf;pct=0;'
+    'v=DMARC1;p=reject;sp=quarantine;rua=mailto:olivier@hureau.com;ruf=mailto:olivier@hureau.com;adkim=s;aspf=s;ri=2400;fo=1:d:s;rf=afrf;pct=0;',
+    'v=DMARC1;p=reject;sp=quarantine;rua=mailto:olivier@hureau.com;ruf=mailto:olivier@hureau.com;adkim=s;aspf=s;ri=2400;fo=1:d:s;rf=afrf;pct=0'
 ])
 
 def test_valid_dmarc_record(src):
